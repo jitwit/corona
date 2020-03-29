@@ -17,4 +17,4 @@ update_deaths=: monad define
 '-o data/deaths.csv' gethttp deaths_url
 )
 
-
+update=: update_cases@update_confirmed@update_deaths
