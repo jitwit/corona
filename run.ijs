@@ -5,11 +5,14 @@ CAN=: I.(<'Canada')e.~1{::"1 confirmed
 NB. gov ca. unevenly updated data...
 cases    =: makenum &.> readcsv jpath '~/code/corona/data/cases.csv'
 NB. retiring
-NB. qc_cases =: > 4 {"1] 4 {:: (</.~ {."1) cases
+qc_cases =: > 4 {"1] 4 {:: (</.~ {."1) cases
 
-growth    =: 2 ({.%~-~/)\ (#~0&<)
-avg_growth=: (+/%#)\ growth f.
-regress   =: (%. 1 ,. i.@#) @: ^.
+growth      =: 2 ({.%~-~/)\ (#~0&<)
+avg_growth  =: (+/%#)\ growth f.
+regress     =: (%. 1 ,. i.@#) @: ^.
+entry       =: [: I. (>1{"1 confirmed) = <
+provinces   =: confirmed {~ entry
+NB. time_series =: 
 
 NB. plot settings/customization
 CLRS_z_=: |. 0 114 255 , 27 240 141 , 0 127 132 , 88 83 176 ,: 136 103 176
