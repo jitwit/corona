@@ -1,25 +1,23 @@
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
 deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
-CAN=: I.(<'Canada')e.~1{::"1 confirmed
+CAN      =: I.(<'Canada')e.~1{::"1 confirmed
 
-NB. gov ca. unevenly updated data...
-cases    =: makenum &.> readcsv jpath '~/code/corona/data/cases.csv'
-NB. retiring
-qc_cases =: > 4 {"1] 4 {:: (</.~ {."1) cases
-
-growth      =: 2 ({.%~-~/)\ (#~0&<)
-avg_growth  =: (+/%#)\ growth f.
-regress     =: (%. 1 ,. i.@#) @: ^.
-entry       =: [: I. (>1{"1 confirmed) = <
-provinces   =: confirmed {~ entry
+growth      =: ({.%~{:-{.)\ (#~0&<)
+avg_growth  =: (+/%#)\ growth
+regress     =: (%.1,.i.@#)@:^.
+entry       =: [:I.(>1{"1 confirmed)=<
+provinces   =: confirmed{~entry
 NB. time_series =: 
-
+]QCC=: (4&{.,6997,_2&{.) _7{.>4}.45{confirmed
+]ONC=: _7{.>4}.43{confirmed
+]OND=: _7{.>4}.43{deaths
+]QCD=: _7{.>4}.45{deaths
 NB. plot settings/customization
 CLRS_z_=: |. 0 114 255 , 27 240 141 , 0 127 132 , 88 83 176 ,: 136 103 176
 
 CAN_FORM=: noun define
 reset;
-backcolor black;frame 1;xcaption Days;ycaption Infected;
+backcolor black;frame 1;
 backcolor 0 0 0;labelcolor 243 240 207; captioncolor 243 240 207;
 axiscolor 243 240 207; textcolor 243 240 207; titlecolor 243 240 207;
 itemcolor CLRS; pensize 2;
@@ -28,6 +26,7 @@ itemcolor CLRS; pensize 2;
 NB. plots
 plot_confirmed=: monad define
 pd CAN_FORM
+pd'xcaption Days;ycaption Infected;'
 pd 'title Coronavirus confirmed in CANADA'
 pd _28 {."1 > 4}."1 confirmed{~0 1 7 9 10{CAN
 pd 'key Alberta "British Columbia" Ontario Québec Saskatchewan;show'
@@ -35,6 +34,7 @@ pd 'key Alberta "British Columbia" Ontario Québec Saskatchewan;show'
 
 plot_deaths=: monad define
 pd CAN_FORM
+pd'xcaption Days;ycaption Dead;'
 pd 'title Coronavirus death in CANADA'
 pd _28 {."1 > 4}."1 deaths{~0 1 7 9 10{CAN
 pd 'key Alberta "British Columbia" Ontario Québec Saskatchewan;show'
