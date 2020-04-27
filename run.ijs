@@ -5,13 +5,15 @@ CAN      =: I.(<'Canada')e.~1{::"1 confirmed
 growth      =: ({.%~{:-{.)\ (#~0&<)
 avg_growth  =: (+/%#)\ growth
 regress     =: (%.1,.i.@#)@:^.
-entry       =: [:I.(>1{"1 confirmed)=<
-provinces   =: confirmed{~entry
+rixes       =: [:I.(>1{"1 confirmed)=<
+documented  =: (<"0 ,. {&confirmed) & rixes
+dead        =: (<"0 ,. {&deaths) & rixes
+
 NB. time_series =: 
-]QCC=: (4&{.,6997,_2&{.) _7{.>4}.45{confirmed
-]ONC=: _7{.>4}.43{confirmed
-]OND=: _7{.>4}.43{deaths
-]QCD=: _7{.>4}.45{deaths
+]QCC=: _14{.>4}.45{confirmed
+]ONC=: _14{.>4}.43{confirmed
+]OND=: _14{.>4}.43{deaths
+]QCD=: _14{.>4}.45{deaths
 NB. plot settings/customization
 CLRS_z_=: |. 0 114 255 , 27 240 141 , 0 127 132 , 88 83 176 ,: 136 103 176
 

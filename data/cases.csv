@@ -396,9 +396,9 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 13,New Brunswick,Nouveau-Brunswick,02-04-2020,91,0,0,91,4625,N/A,,,10,0.123
 12,Nova Scotia,Nouvelle-Écosse,02-04-2020,193,0,0,193,8059,N/A,,,20,0.116
 11,Prince Edward Island,Île-du-Prince-Édouard,02-04-2020,22,0,0,22,653,N/A,,,1,0.048
-60,Yukon,Yukon,02-04-2020,6,0,0,6,742,N/A,,,1,0.200
-61,Northwest Territories,Territoires du Nord-Ouest,02-04-2020,2,0,0,2,969,N/A,,,0,0.000
-62,Nunavut,Nunavut,02-04-2020,0,0,0,0,193,N/A,,,0,0.000
+60,Yukon,Yukon,02-04-2020,6,0,0,6,742,N/A,,,4,0.800
+61,Northwest Territories,Territoires du Nord-Ouest,02-04-2020,2,0,0,2,969,N/A,,,2,1.000
+62,Nunavut,Nunavut,02-04-2020,0,0,0,0,193,N/A,,,-5,0.000
 99,Repatriated travellers,Voyageurs rapatriés,02-04-2020,13,0,0,13,0,N/A,,,0,0.000
 1,Canada,Canada,02-04-2020,11268,15,138,11283,273666,N/A,,,1670,0.174
 59,British Columbia,Colombie-Britannique,03-04-2020,1174,0,35,1174,39926,N/A,,,53,0.047
@@ -422,8 +422,8 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 46,Manitoba,Manitoba,04-04-2020,172,22,2,194,12191,N/A,,,12,0.066
 35,Ontario,Ontario,04-04-2020,3630,0,94,3630,72674,N/A,,,375,0.115
 24,Quebec,Québec,04-04-2020,6997,0,75,6997,90227,N/A,,,896,0.147
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,04-04-2020,195,0,1,195,5297,N/A,,,12,0.066
-13,New Brunswick,Nouveau-Brunswick,04-04-2020,98,0,0,98,3345,N/A,,,3,0.032
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,04-04-2020,195,0,1,195,3345,N/A,,,12,0.066
+13,New Brunswick,Nouveau-Brunswick,04-04-2020,98,0,0,98,5297,N/A,,,3,0.032
 12,Nova Scotia,Nouvelle-Écosse,04-04-2020,236,0,0,236,9722,N/A,,,29,0.140
 11,Prince Edward Island,Île-du-Prince-Édouard,04-04-2020,22,0,0,22,839,N/A,,,0,0.000
 60,Yukon,Yukon,04-04-2020,6,0,0,6,765,N/A,,,0,0.000
@@ -437,8 +437,8 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 46,Manitoba,Manitoba,05-04-2020,187,16,2,203,12771,17,8.37,,9,0.046
 35,Ontario,Ontario,05-04-2020,4038,0,119,4038,76027,1219,30.19,,408,0.112
 24,Quebec,Québec,05-04-2020,7944,0,94,7944,95955,0,0.00,,947,0.135
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,05-04-2020,217,0,1,217,5421,11,5.07,,22,0.113
-13,New Brunswick,Nouveau-Brunswick,05-04-2020,101,0,0,101,3556,28,27.72,,3,0.031
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,05-04-2020,217,0,1,217,3556,11,5.07,,22,0.113
+13,New Brunswick,Nouveau-Brunswick,05-04-2020,101,0,0,101,5421,28,27.72,,3,0.031
 12,Nova Scotia,Nouvelle-Écosse,05-04-2020,262,0,0,262,10084,50,19.08,,26,0.110
 11,Prince Edward Island,Île-du-Prince-Édouard,05-04-2020,22,0,0,22,839,6,27.27,,0,0.000
 60,Yukon,Yukon,05-04-2020,6,0,0,6,770,4,66.67,,0,0.000
@@ -452,8 +452,8 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 46,Manitoba,Manitoba,06-04-2020,190,14,2,204,13788,17,8.33,,1,0.005
 35,Ontario,Ontario,06-04-2020,4347,0,132,4347,79125,1624,37.36,,309,0.077
 24,Quebec,Québec,06-04-2020,8580,0,121,8580,100113,611,7.12,,636,0.080
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,06-04-2020,226,0,2,226,5678,32,14.16,,9,0.041
-13,New Brunswick,Nouveau-Brunswick,06-04-2020,103,0,0,103,3776,30,29.13,,2,0.020
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,06-04-2020,226,0,2,226,3776,32,14.16,,9,0.041
+13,New Brunswick,Nouveau-Brunswick,06-04-2020,103,0,0,103,5678,30,29.13,,2,0.020
 12,Nova Scotia,Nouvelle-Écosse,06-04-2020,293,0,0,293,10738,64,21.84,,31,0.118
 11,Prince Edward Island,Île-du-Prince-Édouard,06-04-2020,22,0,0,22,839,8,36.36,,0,0.000
 60,Yukon,Yukon,06-04-2020,7,0,0,7,775,4,57.14,,1,0.167
@@ -467,8 +467,8 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 46,Manitoba,Manitoba,07-04-2020,203,14,3,217,13990,,,,13,0.064
 35,Ontario,Ontario,07-04-2020,4726,0,153,4726,82055,,,,379,0.087
 24,Quebec,Québec,07-04-2020,9340,0,150,9340,104526,,,,760,0.089
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,07-04-2020,228,0,2,228,6102,,,,2,0.009
-13,New Brunswick,Nouveau-Brunswick,07-04-2020,105,0,0,105,3958,,,,2,0.019
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,07-04-2020,228,0,2,228,3958,,,,2,0.009
+13,New Brunswick,Nouveau-Brunswick,07-04-2020,105,0,0,105,6102,,,,2,0.019
 12,Nova Scotia,Nouvelle-Écosse,07-04-2020,310,0,0,310,11559,,,,17,0.058
 11,Prince Edward Island,Île-du-Prince-Édouard,07-04-2020,22,0,0,22,939,,,,0,0.000
 60,Yukon,Yukon,07-04-2020,7,0,0,7,787,,,,0,0.000
@@ -476,48 +476,288 @@ pruid,prname,prnameFR,date,numconf,numprob,numdeaths,numtotal,numtested,numrecov
 62,Nunavut,Nunavut,07-04-2020,0,0,0,0,234,,,,0,0.000
 99,Repatriated travellers,Voyageurs rapatriés,07-04-2020,13,0,0,13,,,,,0,0.000
 1,Canada,Canada,07-04-2020,17883,14,380,17897,348105,,,,1230,0.074
-59,British Columbia,Colombie-Britannique,08-04-2020,1336,0,48,1336,44269,,,,70,0.055
-48,Alberta,Alberta,08-04-2020,1423,0,29,1423,66783,,,,75,0.056
-47,Saskatchewan,Saskatchewan,08-04-2020,271,0,3,271,15059,,,,18,0.071
-46,Manitoba,Manitoba,08-04-2020,206,15,3,221,14569,,,,17,0.083
-35,Ontario,Ontario,08-04-2020,5276,0,174,5276,85703,,,,929,0.214
-24,Quebec,Québec,08-04-2020,10031,0,175,10031,109270,,,,1451,0.169
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,08-04-2020,232,0,2,232,4135,,,,6,0.027
-13,New Brunswick,Nouveau-Brunswick,08-04-2020,108,0,0,108,6477,,,,5,0.049
-12,Nova Scotia,Nouvelle-Écosse,08-04-2020,342,0,1,342,12072,,,,49,0.167
+59,British Columbia,Colombie-Britannique,08-04-2020,1336,0,48,1336,44269,,,,45,0.035
+48,Alberta,Alberta,08-04-2020,1423,0,29,1423,66783,,,,50,0.036
+47,Saskatchewan,Saskatchewan,08-04-2020,271,0,3,271,15059,,,,11,0.042
+46,Manitoba,Manitoba,08-04-2020,206,15,3,221,14569,,,,4,0.018
+35,Ontario,Ontario,08-04-2020,5276,0,174,5276,85703,,,,550,0.116
+24,Quebec,Québec,08-04-2020,10031,0,175,10031,109270,,,,691,0.074
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,08-04-2020,232,0,2,232,4135,,,,4,0.018
+13,New Brunswick,Nouveau-Brunswick,08-04-2020,108,0,0,108,6477,,,,3,0.029
+12,Nova Scotia,Nouvelle-Écosse,08-04-2020,342,0,1,342,12072,,,,32,0.103
 11,Prince Edward Island,Île-du-Prince-Édouard,08-04-2020,24,0,0,24,1347,,,,2,0.091
 60,Yukon,Yukon,08-04-2020,7,0,0,7,794,,,,0,0.000
 61,Northwest Territories,Territoires du Nord-Ouest,08-04-2020,5,0,0,5,1251,,,,0,0.000
 62,Nunavut,Nunavut,08-04-2020,0,0,0,0,240,,,,0,0.000
 99,Repatriated travellers,Voyageurs rapatriés,08-04-2020,13,0,0,13,,,,,0,0.000
-1,Canada,Canada,08-04-2020,19274,15,435,19289,361969,,,,2622,0.157
-59,British Columbia,Colombie-Britannique,09-04-2020,1370,0,50,1370,45156,,,,,
-48,Alberta,Alberta,09-04-2020,1451,0,32,1451,68116,,,,,
-47,Saskatchewan,Saskatchewan,09-04-2020,278,0,3,278,16059,,,,,
-46,Manitoba,Manitoba,09-04-2020,207,17,3,224,14569,,,,,
-35,Ontario,Ontario,09-04-2020,5759,0,200,5759,89906,,,,,
-24,Quebec,Québec,09-04-2020,10912,0,216,10912,113365,,,,,
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,09-04-2020,236,0,3,236,4384,,,,,
-13,New Brunswick,Nouveau-Brunswick,09-04-2020,111,0,0,111,6949,,,,,
-12,Nova Scotia,Nouvelle-Écosse,09-04-2020,373,0,2,373,13045,,,,,
-11,Prince Edward Island,Île-du-Prince-Édouard,09-04-2020,25,0,0,25,1435,,,,,
-60,Yukon,Yukon,09-04-2020,8,0,0,8,806,,,,,
-61,Northwest Territories,Territoires du Nord-Ouest,09-04-2020,5,0,0,5,1265,,,,,
-62,Nunavut,Nunavut,09-04-2020,0,0,0,0,247,,,,,
-99,Repatriated travellers,Voyageurs rapatriés,09-04-2020,13,0,0,13,,,,,,
-1,Canada,Canada,09-04-2020,20748,17,509,20765,375302,,,,,
-59,British Columbia,Colombie-Britannique,10-04-2020,1410,0,55,1410,46236,,,,,
-48,Alberta,Alberta,10-04-2020,1500,0,39,1500,70080,,,,,
-47,Saskatchewan,Saskatchewan,10-04-2020,285,0,3,285,16952,,,,,
-46,Manitoba,Manitoba,10-04-2020,215,15,4,230,16075,,,,,
-35,Ontario,Ontario,10-04-2020,6237,0,222,6237,94271,,,,,
-24,Quebec,Québec,10-04-2020,11677,0,241,11677,118217,,,,,
-10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,10-04-2020,239,0,3,239,4520,,,,,
-13,New Brunswick,Nouveau-Brunswick,10-04-2020,112,0,0,112,7299,,,,,
-12,Nova Scotia,Nouvelle-Écosse,10-04-2020,407,0,2,407,13881,,,,,
-11,Prince Edward Island,Île-du-Prince-Édouard,10-04-2020,25,0,0,25,1435,,,,,
-60,Yukon,Yukon,10-04-2020,8,0,0,8,806,,,,,
-61,Northwest Territories,Territoires du Nord-Ouest,10-04-2020,5,0,0,5,1342,,,,,
-62,Nunavut,Nunavut,10-04-2020,0,0,0,0,261,,,,,
-99,Repatriated travellers,Voyageurs rapatriés,10-04-2020,13,0,,13,,,,,,
-1,Canada,Canada,10-04-2020,22133,15,569,22148,391375,,,,,
+1,Canada,Canada,08-04-2020,19274,15,435,19289,361969,,,,1392,0.078
+59,British Columbia,Colombie-Britannique,09-04-2020,1370,0,50,1370,45156,,,,34,0.025
+48,Alberta,Alberta,09-04-2020,1451,0,32,1451,68116,,,,28,0.020
+47,Saskatchewan,Saskatchewan,09-04-2020,278,0,3,278,16059,,,,7,0.026
+46,Manitoba,Manitoba,09-04-2020,207,17,3,224,14569,,,,3,0.014
+35,Ontario,Ontario,09-04-2020,5759,0,200,5759,89906,,,,483,0.092
+24,Quebec,Québec,09-04-2020,10912,0,216,10912,113365,,,,881,0.088
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,09-04-2020,236,0,3,236,4384,,,,4,0.017
+13,New Brunswick,Nouveau-Brunswick,09-04-2020,111,0,0,111,6949,,,,3,0.028
+12,Nova Scotia,Nouvelle-Écosse,09-04-2020,373,0,2,373,13045,,,,31,0.091
+11,Prince Edward Island,Île-du-Prince-Édouard,09-04-2020,25,0,0,25,1435,,,,1,0.042
+60,Yukon,Yukon,09-04-2020,8,0,0,8,806,,,,1,0.143
+61,Northwest Territories,Territoires du Nord-Ouest,09-04-2020,5,0,0,5,1265,,,,0,0.000
+62,Nunavut,Nunavut,09-04-2020,0,0,0,0,247,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,09-04-2020,13,0,0,13,,,,,0,0.000
+1,Canada,Canada,09-04-2020,20748,17,509,20765,375302,,,,1476,0.077
+59,British Columbia,Colombie-Britannique,10-04-2020,1410,0,55,1410,46236,,,,40,0.029
+48,Alberta,Alberta,10-04-2020,1500,0,39,1500,70080,,,,49,0.034
+47,Saskatchewan,Saskatchewan,10-04-2020,285,0,3,285,16952,,,,7,0.025
+46,Manitoba,Manitoba,10-04-2020,215,15,4,230,16075,,,,6,0.027
+35,Ontario,Ontario,10-04-2020,6237,0,222,6237,94271,,,,478,0.083
+24,Quebec,Québec,10-04-2020,11677,0,241,11677,118217,,,,765,0.070
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,10-04-2020,239,0,3,239,4520,,,,3,0.013
+13,New Brunswick,Nouveau-Brunswick,10-04-2020,112,0,0,112,7299,,,,1,0.009
+12,Nova Scotia,Nouvelle-Écosse,10-04-2020,407,0,2,407,13881,,,,34,0.091
+11,Prince Edward Island,Île-du-Prince-Édouard,10-04-2020,25,0,0,25,1435,,,,0,0.000
+60,Yukon,Yukon,10-04-2020,8,0,0,8,806,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,10-04-2020,5,0,0,5,1342,,,,0,0.000
+62,Nunavut,Nunavut,10-04-2020,0,0,0,0,261,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,10-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,10-04-2020,22133,15,569,22148,391375,,,,1383,0.067
+59,British Columbia,Colombie-Britannique,11-04-2020,1445,0,58,1445,46236,,,,35,0.025
+48,Alberta,Alberta,11-04-2020,1569,0,40,1569,72779,,,,69,0.046
+47,Saskatchewan,Saskatchewan,11-04-2020,289,0,4,289,17716,,,,4,0.014
+46,Manitoba,Manitoba,11-04-2020,226,17,4,243,16220,,,,13,0.057
+35,Ontario,Ontario,11-04-2020,6648,0,253,6648,97838,,,,411,0.066
+24,Quebec,Québec,11-04-2020,12292,0,289,12292,123115,,,,615,0.053
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,11-04-2020,241,0,3,241,4713,,,,2,0.008
+13,New Brunswick,Nouveau-Brunswick,11-04-2020,112,0,0,112,7500,,,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,11-04-2020,428,0,2,428,14511,,,,21,0.052
+11,Prince Edward Island,Île-du-Prince-Édouard,11-04-2020,25,0,0,25,1577,,,,0,0.000
+60,Yukon,Yukon,11-04-2020,8,0,0,8,815,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,11-04-2020,5,0,0,5,1370,,,,0,0.000
+62,Nunavut,Nunavut,11-04-2020,0,0,0,0,261,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,11-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,11-04-2020,23301,17,653,23318,404651,,,,1170,0.053
+59,British Columbia,Colombie-Britannique,12-04-2020,1445,0,58,1445,48360,,,,0,0.000
+48,Alberta,Alberta,12-04-2020,1651,0,44,1651,74709,,,,82,0.052
+47,Saskatchewan,Saskatchewan,12-04-2020,296,2,4,298,18499,,,,9,0.031
+46,Manitoba,Manitoba,12-04-2020,226,16,4,242,17066,,,,-1,-0.004
+35,Ontario,Ontario,12-04-2020,7049,0,274,7049,104784,,,,401,0.060
+24,Quebec,Québec,12-04-2020,12846,0,328,12846,126771,,,,554,0.045
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,12-04-2020,242,0,3,242,4812,,,,1,0.004
+13,New Brunswick,Nouveau-Brunswick,12-04-2020,114,0,0,114,7760,,,,2,0.018
+12,Nova Scotia,Nouvelle-Écosse,12-04-2020,445,0,2,445,15329,,,,17,0.040
+11,Prince Edward Island,Île-du-Prince-Édouard,12-04-2020,25,0,0,25,1645,,,,0,0.000
+60,Yukon,Yukon,12-04-2020,8,0,0,8,815,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,12-04-2020,5,0,0,5,1386,,,,0,0.000
+62,Nunavut,Nunavut,12-04-2020,0,0,0,0,264,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,12-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,12-04-2020,24365,18,717,24383,422200,,,,1065,0.046
+59,British Columbia,Colombie-Britannique,13-04-2020,1490,0,69,1490,49370,,,,45,0.031
+48,Alberta,Alberta,13-04-2020,1732,0,46,1732,77007,,,,81,0.049
+47,Saskatchewan,Saskatchewan,13-04-2020,300,0,4,300,18995,,,,2,0.007
+46,Manitoba,Manitoba,13-04-2020,229,17,4,246,17119,,,,4,0.016
+35,Ontario,Ontario,13-04-2020,7470,0,291,7470,109764,,,,421,0.060
+24,Quebec,Québec,13-04-2020,13557,0,360,13557,131570,,,,711,0.055
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,13-04-2020,244,0,3,244,4897,,,,2,0.008
+13,New Brunswick,Nouveau-Brunswick,13-04-2020,116,0,0,116,8004,,,,2,0.018
+12,Nova Scotia,Nouvelle-Écosse,13-04-2020,474,0,3,474,16548,,,,29,0.065
+11,Prince Edward Island,Île-du-Prince-Édouard,13-04-2020,25,0,0,25,1715,,,,0,0.000
+60,Yukon,Yukon,13-04-2020,8,0,0,8,832,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,13-04-2020,5,0,0,5,1390,,,,0,0.000
+62,Nunavut,Nunavut,13-04-2020,0,0,0,0,264,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,13-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,13-04-2020,25663,17,780,25680,437475,,,,1297,0.053
+59,British Columbia,Colombie-Britannique,14-04-2020,1517,0,72,1517,50134,,,,27,0.018
+48,Alberta,Alberta,14-04-2020,1870,0,48,1870,79695,,,,138,0.080
+47,Saskatchewan,Saskatchewan,14-04-2020,301,0,4,301,19442,,,,1,0.003
+46,Manitoba,Manitoba,14-04-2020,229,17,4,246,17789,,,,0,0.000
+35,Ontario,Ontario,14-04-2020,7953,0,334,7953,115189,,,,483,0.065
+24,Quebec,Québec,14-04-2020,14248,0,435,14248,137451,,,,691,0.051
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,14-04-2020,244,0,3,244,5370,,,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,14-04-2020,116,0,0,116,8229,,,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,14-04-2020,517,0,3,517,17477,,,,43,0.091
+11,Prince Edward Island,Île-du-Prince-Édouard,14-04-2020,25,0,0,25,1715,,,,0,0.000
+60,Yukon,Yukon,14-04-2020,8,0,0,8,835,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,14-04-2020,5,0,0,5,1393,,,,0,0.000
+62,Nunavut,Nunavut,14-04-2020,0,0,0,0,264,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,14-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,14-04-2020,27046,17,903,27063,454983,,,,1383,0.054
+59,British Columbia,Colombie-Britannique,15-04-2020,1561,0,75,1561,50438,,,,44,0.029
+48,Alberta,Alberta,15-04-2020,1996,0,48,1996,79695,,,,126,0.067
+47,Saskatchewan,Saskatchewan,15-04-2020,304,0,4,304,20013,,,,3,0.010
+46,Manitoba,Manitoba,15-04-2020,231,17,5,246,17789,,,,0,0.000
+35,Ontario,Ontario,15-04-2020,8447,0,385,8447,120182,,,,494,0.062
+24,Quebec,Québec,15-04-2020,14860,0,487,14860,143174,,,,612,0.043
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,15-04-2020,247,0,3,247,5157,,,,3,0.012
+13,New Brunswick,Nouveau-Brunswick,15-04-2020,117,0,0,117,8674,,,,1,0.009
+12,Nova Scotia,Nouvelle-Écosse,15-04-2020,549,0,3,549,18245,,,,32,0.062
+11,Prince Edward Island,Île-du-Prince-Édouard,15-04-2020,26,0,0,26,1863,,,,1,0.040
+60,Yukon,Yukon,15-04-2020,8,0,0,8,841,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,15-04-2020,5,0,0,5,1401,,,,0,0.000
+62,Nunavut,Nunavut,15-04-2020,0,0,0,0,264,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,15-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,15-04-2020,28364,17,1010,28381,467736,,,,1318,0.049
+59,British Columbia,Colombie-Britannique,16-04-2020,1561,0,75,1561,51297,,,,0,0.000
+48,Alberta,Alberta,16-04-2020,2158,0,50,2158,85502,,,,162,0.081
+47,Saskatchewan,Saskatchewan,16-04-2020,305,0,4,305,20631,,,,1,0.003
+46,Manitoba,Manitoba,16-04-2020,239,11,5,250,18318,,,,4,0.016
+35,Ontario,Ontario,16-04-2020,8961,0,423,8961,125309,,,,514,0.061
+24,Quebec,Québec,16-04-2020,15857,0,630,15857,148571,,,,997,0.067
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,16-04-2020,252,0,3,252,5305,,,,5,0.020
+13,New Brunswick,Nouveau-Brunswick,16-04-2020,117,0,0,117,8945,,,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,16-04-2020,579,0,3,579,19239,,,,30,0.055
+11,Prince Edward Island,Île-du-Prince-Édouard,16-04-2020,26,0,0,26,1946,,,,0,0.000
+60,Yukon,Yukon,16-04-2020,8,0,0,8,849,,,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,16-04-2020,5,0,0,5,1438,,,,0,0.000
+62,Nunavut,Nunavut,16-04-2020,0,0,0,0,275,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,16-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,16-04-2020,30081,11,1193,30092,487625,,,,1711,0.060
+59,British Columbia,Colombie-Britannique,17-04-2020,1575,0,77,1575,52378,,,,14,0.009
+48,Alberta,Alberta,17-04-2020,2397,0,50,2397,89144,,,,239,0.111
+47,Saskatchewan,Saskatchewan,17-04-2020,306,1,4,307,21212,,,,2,0.007
+46,Manitoba,Manitoba,17-04-2020,239,11,5,250,18814,,,,0,0.000
+35,Ontario,Ontario,17-04-2020,9525,0,478,9525,132133,,,,564,0.063
+24,Quebec,Québec,17-04-2020,16798,0,688,16798,153722,,,,941,0.059
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,17-04-2020,256,0,3,256,5584,,,,4,0.016
+13,New Brunswick,Nouveau-Brunswick,17-04-2020,117,0,0,117,9684,,,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,17-04-2020,606,0,4,606,20432,,,,27,0.047
+11,Prince Edward Island,Île-du-Prince-Édouard,17-04-2020,26,0,0,26,2013,,,,0,0.000
+60,Yukon,Yukon,17-04-2020,9,0,0,9,852,,,,1,0.125
+61,Northwest Territories,Territoires du Nord-Ouest,17-04-2020,5,0,0,5,1447,,,,0,0.000
+62,Nunavut,Nunavut,17-04-2020,0,0,0,0,286,,,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,17-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,17-04-2020,31872,12,1309,31884,507701,,,,1792,0.060
+59,British Columbia,Colombie-Britannique,18-04-2020,1618,0,78,1618,53569,966,59.70,,43,0.027
+48,Alberta,Alberta,18-04-2020,2562,0,51,2562,92962,1162,45.36,,165,0.069
+47,Saskatchewan,Saskatchewan,18-04-2020,310,3,4,313,21997,234,74.76,,6,0.020
+46,Manitoba,Manitoba,18-04-2020,243,10,5,253,19412,132,52.17,,3,0.012
+35,Ontario,Ontario,18-04-2020,10010,0,514,10010,139448,4875,48.70,,485,0.051
+24,Quebec,Québec,18-04-2020,17521,0,805,17521,158770,3315,18.92,,723,0.043
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,18-04-2020,257,0,3,257,5870,189,73.54,,1,0.004
+13,New Brunswick,Nouveau-Brunswick,18-04-2020,118,0,0,118,9958,87,73.73,,1,0.009
+12,Nova Scotia,Nouvelle-Écosse,18-04-2020,649,0,7,649,21363,184,28.35,,43,0.071
+11,Prince Edward Island,Île-du-Prince-Édouard,18-04-2020,26,0,0,26,2086,23,88.46,,0,0.000
+60,Yukon,Yukon,18-04-2020,9,0,0,9,859,8,88.89,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,18-04-2020,5,0,0,5,1459,3,60.00,,0,0.000
+62,Nunavut,Nunavut,18-04-2020,0,0,0,0,304,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,18-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,18-04-2020,33341,13,1467,33354,528057,11178,33.51,,1470,0.046
+59,British Columbia,Colombie-Britannique,19-04-2020,1618,0,78,1618,54778,966,59.70,,0,0.000
+48,Alberta,Alberta,19-04-2020,2562,0,51,2562,97180,1162,45.36,,0,0.000
+47,Saskatchewan,Saskatchewan,19-04-2020,314,1,4,315,22759,234,74.29,,2,0.006
+46,Manitoba,Manitoba,19-04-2020,245,8,5,253,19634,143,56.52,,0,0.000
+35,Ontario,Ontario,19-04-2020,10578,0,553,10578,148106,5209,49.24,,568,0.057
+24,Quebec,Québec,19-04-2020,18357,0,877,18357,163548,3555,19.37,,836,0.048
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,19-04-2020,257,0,3,257,6128,191,74.32,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,19-04-2020,118,0,0,118,10290,92,77.97,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,19-04-2020,675,0,9,675,22029,200,29.63,,26,0.040
+11,Prince Edward Island,Île-du-Prince-Édouard,19-04-2020,26,0,0,26,2239,23,88.46,,0,0.000
+60,Yukon,Yukon,19-04-2020,9,0,0,9,878,8,88.89,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,19-04-2020,5,0,0,5,1476,3,60.00,,0,0.000
+62,Nunavut,Nunavut,19-04-2020,0,0,0,0,304,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,19-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,19-04-2020,34777,9,1580,34786,549349,11786,33.88,,1432,0.043
+59,British Columbia,Colombie-Britannique,20-04-2020,1699,0,86,1699,55779,1039,61.15,,81,0.050
+48,Alberta,Alberta,20-04-2020,2908,0,59,2908,100898,1230,42.30,,346,0.135
+47,Saskatchewan,Saskatchewan,20-04-2020,316,0,4,316,22759,238,75.32,,1,0.003
+46,Manitoba,Manitoba,20-04-2020,246,8,6,254,19924,143,56.30,,1,0.004
+35,Ontario,Ontario,20-04-2020,11184,0,584,11184,148106,5515,49.31,,606,0.057
+24,Quebec,Québec,20-04-2020,19319,0,939,19319,167801,3847,19.91,,962,0.052
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,20-04-2020,257,0,3,257,6233,191,74.32,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,20-04-2020,118,0,0,118,10492,98,83.05,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,20-04-2020,721,0,9,721,22669,248,34.40,,46,0.068
+11,Prince Edward Island,Île-du-Prince-Édouard,20-04-2020,26,0,0,26,2239,23,88.46,,0,0.000
+60,Yukon,Yukon,20-04-2020,11,0,0,11,878,8,72.73,,2,0.222
+61,Northwest Territories,Territoires du Nord-Ouest,20-04-2020,5,0,0,5,1495,5,100.00,,0,0.000
+62,Nunavut,Nunavut,20-04-2020,0,0,0,0,305,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,20-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,20-04-2020,36823,8,1690,36831,559578,12585,34.17,,2045,0.059
+59,British Columbia,Colombie-Britannique,21-04-2020,1724,0,87,1724,56526,1041,60.38,,25,0.015
+48,Alberta,Alberta,21-04-2020,3095,0,61,3095,104370,1273,41.13,,187,0.064
+47,Saskatchewan,Saskatchewan,21-04-2020,320,0,4,320,23554,252,78.75,,4,0.013
+46,Manitoba,Manitoba,21-04-2020,246,9,6,255,20328,150,58.82,,1,0.004
+35,Ontario,Ontario,21-04-2020,11735,0,622,11735,148106,5806,49.48,,551,0.049
+24,Quebec,Québec,21-04-2020,20126,0,1041,20126,171520,4048,20.11,,807,0.042
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,21-04-2020,257,0,3,257,6383,194,75.49,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,21-04-2020,118,0,0,118,10799,102,86.44,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,21-04-2020,737,0,10,737,23261,286,38.81,,16,0.022
+11,Prince Edward Island,Île-du-Prince-Édouard,21-04-2020,26,0,0,26,2330,23,88.46,,0,0.000
+60,Yukon,Yukon,21-04-2020,11,0,0,11,872,8,72.73,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,21-04-2020,5,0,0,5,1509,5,100.00,,0,0.000
+62,Nunavut,Nunavut,21-04-2020,0,0,0,0,320,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,21-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,21-04-2020,38413,9,1834,38422,569878,13188,34.32,,1591,0.043
+59,British Columbia,Colombie-Britannique,22-04-2020,1795,0,90,1795,57499,1079,60.11,,71,0.041
+48,Alberta,Alberta,22-04-2020,3401,0,66,3401,108521,1310,38.52,,306,0.099
+47,Saskatchewan,Saskatchewan,22-04-2020,326,0,4,326,24008,261,80.06,,6,0.019
+46,Manitoba,Manitoba,22-04-2020,246,11,6,257,20651,154,59.92,,2,0.008
+35,Ontario,Ontario,22-04-2020,12245,0,659,12245,178467,6221,50.80,,510,0.043
+24,Quebec,Québec,22-04-2020,20965,0,1134,20965,176048,4291,20.47,,839,0.042
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,22-04-2020,256,0,3,256,6655,199,77.73,,-1,-0.004
+13,New Brunswick,Nouveau-Brunswick,22-04-2020,118,0,0,118,11121,104,88.14,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,22-04-2020,772,0,12,772,24155,330,42.75,,35,0.047
+11,Prince Edward Island,Île-du-Prince-Édouard,22-04-2020,26,0,0,26,2344,24,92.31,,0,0.000
+60,Yukon,Yukon,22-04-2020,11,0,0,11,878,8,72.73,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,22-04-2020,5,0,0,5,1512,5,100.00,,0,0.000
+62,Nunavut,Nunavut,22-04-2020,0,0,0,0,333,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,22-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,22-04-2020,40179,11,1974,40190,612192,13986,34.80,,1768,0.046
+59,British Columbia,Colombie-Britannique,23-04-2020,1824,0,94,1824,58848,1092,59.87,,29,0.016
+48,Alberta,Alberta,23-04-2020,3720,0,67,3720,112562,1357,36.48,,319,0.094
+47,Saskatchewan,Saskatchewan,23-04-2020,331,0,4,331,24504,270,81.57,,5,0.015
+46,Manitoba,Manitoba,23-04-2020,251,11,6,262,21229,174,66.41,,5,0.019
+35,Ontario,Ontario,23-04-2020,12879,0,713,12879,188377,6680,51.87,,634,0.052
+24,Quebec,Québec,23-04-2020,21838,0,1243,21838,180833,4484,20.53,,873,0.042
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,23-04-2020,256,0,3,256,6862,205,80.08,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,23-04-2020,118,0,0,118,11616,104,88.14,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,23-04-2020,827,0,16,827,24884,358,43.29,,55,0.071
+11,Prince Edward Island,Île-du-Prince-Édouard,23-04-2020,26,0,0,26,2466,24,92.31,,0,0.000
+60,Yukon,Yukon,23-04-2020,11,0,0,11,881,8,72.73,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,23-04-2020,5,0,0,5,1515,5,100.00,,0,0.000
+62,Nunavut,Nunavut,23-04-2020,0,0,0,0,340,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,23-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,23-04-2020,42099,11,2146,42110,634917,14761,35.05,,1920,0.048
+59,British Columbia,Colombie-Britannique,24-04-2020,1853,0,98,1853,60472,1114,60.12,,29,0.016
+48,Alberta,Alberta,24-04-2020,4017,0,72,4017,116859,1397,34.78,,297,0.080
+47,Saskatchewan,Saskatchewan,24-04-2020,341,0,4,341,25141,280,82.11,,10,0.030
+46,Manitoba,Manitoba,24-04-2020,252,11,6,263,21720,196,74.52,,1,0.004
+35,Ontario,Ontario,24-04-2020,13519,0,763,13519,200270,7087,52.42,,640,0.050
+24,Quebec,Québec,24-04-2020,22616,0,1340,22616,185632,4724,20.89,,778,0.036
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,24-04-2020,256,0,3,256,7105,207,80.86,,0,0.000
+13,New Brunswick,Nouveau-Brunswick,24-04-2020,118,0,0,118,11908,107,90.68,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,24-04-2020,850,0,16,850,25658,392,46.12,,23,0.028
+11,Prince Edward Island,Île-du-Prince-Édouard,24-04-2020,26,0,0,26,2564,24,92.31,,0,0.000
+60,Yukon,Yukon,24-04-2020,11,0,0,11,888,8,72.73,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,24-04-2020,5,0,0,5,1537,5,100.00,,0,0.000
+62,Nunavut,Nunavut,24-04-2020,0,0,0,0,354,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,24-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,24-04-2020,43877,11,2302,43888,660108,15541,35.41,,1778,0.042
+59,British Columbia,Colombie-Britannique,25-04-2020,1948,0,100,1948,63039,1137,58.37,,95,0.051
+48,Alberta,Alberta,25-04-2020,4233,0,73,4233,121244,1471,34.75,,216,0.054
+47,Saskatchewan,Saskatchewan,25-04-2020,347,2,4,349,25697,288,82.52,,8,0.023
+46,Manitoba,Manitoba,25-04-2020,256,11,6,267,21720,199,74.53,,4,0.015
+35,Ontario,Ontario,25-04-2020,13995,0,811,13995,210502,7509,53.65,,476,0.035
+24,Quebec,Québec,25-04-2020,23267,0,1446,23267,190765,5057,21.73,,651,0.029
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,25-04-2020,257,0,3,257,7332,208,80.93,,1,0.004
+13,New Brunswick,Nouveau-Brunswick,25-04-2020,118,0,0,118,12279,107,90.68,,0,0.000
+12,Nova Scotia,Nouvelle-Écosse,25-04-2020,865,0,22,865,26320,412,47.63,,15,0.018
+11,Prince Edward Island,Île-du-Prince-Édouard,25-04-2020,26,0,0,26,2564,24,92.31,,0,0.000
+60,Yukon,Yukon,25-04-2020,11,0,0,11,894,8,72.73,,0,0.000
+61,Northwest Territories,Territoires du Nord-Ouest,25-04-2020,5,0,0,5,1554,5,100.00,,0,0.000
+62,Nunavut,Nunavut,25-04-2020,0,0,0,0,361,0,N/A,,0,0.000
+99,Repatriated travellers,Voyageurs rapatriés,25-04-2020,13,0,,13,,,,,0,0.000
+1,Canada,Canada,25-04-2020,45341,13,2465,45354,684271,16425,36.22,,1466,0.033
+59,British Columbia,Colombie-Britannique,26-04-2020,1948,0,100,1948,64700,1137,58.37,,,
+48,Alberta,Alberta,26-04-2020,4480,0,73,4480,125310,1549,34.58,,,
+47,Saskatchewan,Saskatchewan,26-04-2020,353,0,4,353,25697,288,81.59,,,
+46,Manitoba,Manitoba,26-04-2020,260,11,6,271,21720,199,73.43,,,
+35,Ontario,Ontario,26-04-2020,14432,0,835,14432,222129,8000,55.43,,,
+24,Quebec,Québec,26-04-2020,24107,0,1515,24107,195577,5342,22.16,,,
+10,Newfoundland and Labrador,Terre-Neuve-et-Labrador,26-04-2020,258,0,3,258,7440,219,84.88,,,
+13,New Brunswick,Nouveau-Brunswick,26-04-2020,118,0,0,118,12525,111,94.07,,,
+12,Nova Scotia,Nouvelle-Écosse,26-04-2020,873,0,24,873,26871,439,50.29,,,
+11,Prince Edward Island,Île-du-Prince-Édouard,26-04-2020,26,0,0,26,2688,24,92.31,,,
+60,Yukon,Yukon,26-04-2020,11,0,0,11,908,8,72.73,,,
+61,Northwest Territories,Territoires du Nord-Ouest,26-04-2020,5,0,0,5,1575,5,100.00,,,
+62,Nunavut,Nunavut,26-04-2020,0,0,0,0,368,0,N/A,,,
+99,Repatriated travellers,Voyageurs rapatriés,26-04-2020,13,0,,13,,,,,,
+1,Canada,Canada,26-04-2020,46884,11,2560,46895,707508,17321,36.94,,,
