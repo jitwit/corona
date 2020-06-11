@@ -1,3 +1,4 @@
+coclass'jrona'
 require'tables/csv plot web/gethttp'
 
 donnees_url=: 'https://www.inspq.qc.ca/covid-19/donnees'
@@ -26,14 +27,19 @@ echo deaths_url
 '-o ~/code/corona/data/deaths.csv' gethttp deaths_url
 )
 
-update=: update_donnees@update_cases@update_confirmed@update_deaths
-
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
 deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
 CAN      =: I.(<'Canada')e.~1{::"1 confirmed
 
+update=: 3 : 0
+update_deaths ''
+update_confirmed''
+NB. update_donnees@update_cases@
+confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
+deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
+)
+
 growth      =: ({:-{.)\ (#~0&<)
-avg_growth  =: (+/%#)\ growth
 regress     =: (%.1,.i.@#)@:^.
 rixes       =: [:I.(>1{"1 confirmed)=<
 documented  =: (<"0 ,. {&confirmed) & rixes
@@ -47,7 +53,7 @@ TIMEFRAME=: _60
 ]QCD=: TIMEFRAME{.>4}.45{deaths
 
 NB. plot settings/customization
-CLRS_z_=: 0 114 255, 136 103 176, 0 127 132 , 88 83 176 ,: 27 240 141
+CLRS_z_=: 0 127 132, 136 103 176,27 240 141,0 114 255,: 88 83 176
 CAN_FORM=: 0 : 0
 reset;
 backcolor black;frame 1;
@@ -83,9 +89,17 @@ plot_deaths ^: IFQT ''
 rona_form=: 0 : 0
 pc rona; pn "J rona";
 bin v;
-  cc fetch button; set fetch caption update;
   cc pdeaths button; set pdeaths caption "show deaths";
   cc pcases  button; set pcases  caption "show cases";
+  bin h;
+    cc mawlab static; cn "sliding avg size";
+    cc maw edit; set maw wh 30 20; set maw regexpvalidator \d{,2}; set maw text 7;
+  bin z;
+  bin h;
+    cc tmflab static; cn "timeframe size";
+    cc tmf edit; set tmf wh 30 20; set tmf regexpvalidator \d{,3}; set tmf text 60;
+  bin z;
+  cc fetch button; set fetch caption update;
 bin z;
 pshow;
 )
@@ -97,6 +111,13 @@ wd'psel rona;pclose'
 rona_fetch_button=: update
 rona_pdeaths_button=: plot_deaths
 rona_pcases_button=: plot_confirmed
+rona_maw_button=: 3 : 0
+WINDOW=: ". wd 'get maw text'
+)
+rona_tmf_button=: 3 : 0
+TIMEFRAME=: - ". wd 'get tmf text'
+
+)
 
 courir=: 3 : 0
 if. IFQT do. wd rona_form[rona_close^:(wdisparent'rona')''
