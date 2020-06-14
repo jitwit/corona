@@ -1,4 +1,4 @@
-coclass'jrona'
+	coclass'jrona'
 require'tables/csv plot web/gethttp'
 
 donnees_url=: 'https://www.inspq.qc.ca/covid-19/donnees'
