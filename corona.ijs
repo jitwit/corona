@@ -9,12 +9,12 @@ confirmed_url=: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/maste
 
 update_cases=: 3 : 0
 echo gov_cases_url
-'-o ~/code/corona/data/cases.csv' gethttp gov_cases_url
+'-O ~/code/corona/data/cases.csv' gethttp gov_cases_url
 )
 
 update_donnees=: 3 : 0
 echo donnees_url
-'-o ~/code/corona/data/donnees.csv' gethttp donnees_url
+'-O ~/code/corona/data/donnees.csv' gethttp donnees_url
 )
 
 update_confirmed=: 3 : 0
