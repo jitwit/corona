@@ -1,4 +1,4 @@
-	coclass'jrona'
+coclass'jrona'
 require'tables/csv plot web/gethttp'
 
 donnees_url=: 'https://www.inspq.qc.ca/covid-19/donnees'
@@ -7,24 +7,24 @@ gov_cases_url=: 'https://health-infobase.canada.ca/src/data/covidLive/covid19.cs
 deaths_url=: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
 confirmed_url=: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
 
-update_cases=: monad define
+update_cases=: 3 : 0
 echo gov_cases_url
 '-o ~/code/corona/data/cases.csv' gethttp gov_cases_url
 )
 
-update_donnees=: monad define
+update_donnees=: 3 : 0
 echo donnees_url
 '-o ~/code/corona/data/donnees.csv' gethttp donnees_url
 )
 
-update_confirmed=: monad define
+update_confirmed=: 3 : 0
 echo confirmed_url
-'-o ~/code/corona/data/confirmed.csv' gethttp confirmed_url
+'-O ~/code/corona/data/confirmed.csv' gethttp confirmed_url
 )	
 
-update_deaths=: monad define
+update_deaths=: 3 : 0
 echo deaths_url
-'-o ~/code/corona/data/deaths.csv' gethttp deaths_url
+'-O ~/code/corona/data/deaths.csv' gethttp deaths_url
 )
 
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
