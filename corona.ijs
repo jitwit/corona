@@ -20,7 +20,7 @@ echo donnees_url
 update_confirmed=: 3 : 0
 echo confirmed_url
 '-O ~/code/corona/data/confirmed.csv' gethttp confirmed_url
-)	
+)
 
 update_deaths=: 3 : 0
 echo deaths_url
@@ -55,7 +55,7 @@ TIMEFRAME=: _60
 NB. plot settings/customization
 CLRS_z_=: 0 127 132, 136 103 176,27 240 141,0 114 255,: 88 83 176
 CAN_FORM=: 0 : 0
-reset;
+reset; qt 1200 800;
 backcolor black;frame 1;
 backcolor 0 0 0;labelcolor 243 240 207; captioncolor 243 240 207;
 axiscolor 243 240 207; textcolor 243 240 207; titlecolor 243 240 207;
