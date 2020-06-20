@@ -1,40 +1,15 @@
 coclass'jrona'
 require'tables/csv plot web/gethttp'
 
-donnees_url=: 'https://www.inspq.qc.ca/covid-19/donnees'
-gov_cases_url=: 'https://health-infobase.canada.ca/src/data/covidLive/covid19.csv'
-
-deaths_url=: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
-confirmed_url=: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
-
-update_cases=: 3 : 0
-echo gov_cases_url
-'-O ~/code/corona/data/cases.csv' gethttp gov_cases_url
-)
-
-update_donnees=: 3 : 0
-echo donnees_url
-'-O ~/code/corona/data/donnees.csv' gethttp donnees_url
-)
-
-update_confirmed=: 3 : 0
-echo confirmed_url
-'-O ~/code/corona/data/confirmed.csv' gethttp confirmed_url
-)
-
-update_deaths=: 3 : 0
-echo deaths_url
-'-O ~/code/corona/data/deaths.csv' gethttp deaths_url
-)
-
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
 deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
 CAN      =: I.(<'Canada')e.~1{::"1 confirmed
 
+DIR=: '~/code/corona'
+
 update=: 3 : 0
-update_deaths ''
-update_confirmed''
-NB. update_donnees@update_cases@
+echo 2!:0 'cd ',DIR,' && make update'
+echo 'updated'
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
 deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
 )
@@ -45,8 +20,8 @@ rixes       =: [:I.(>1{"1 confirmed)=<
 documented  =: (<"0 ,. {&confirmed) & rixes
 dead        =: (<"0 ,. {&deaths) & rixes
 
-WINDOW=: 7
-TIMEFRAME=: _60
+WINDOW=: 3
+TIMEFRAME=: _90
 ]QCC=: TIMEFRAME{.>4}.45{confirmed
 ]ONC=: TIMEFRAME{.>4}.43{confirmed
 ]OND=: TIMEFRAME{.>4}.43{deaths
