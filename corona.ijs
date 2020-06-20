@@ -53,14 +53,6 @@ pd WINDOW %~ WINDOW growth"1 ] TIMEFRAME {."1 > 4}."1 deaths{~0 1 7 9 10{CAN
 pd 'key Alberta "British Columbia" Ontario Québec Saskatchewan;show'
 )
 
-reloadit=: 3 : 0
-'a b'=. 2{.(>y),WINDOW,TIMEFRAME
-load'run.ijs'
-WINDOW=: a
-TIMEFRAME=: b
-plot_deaths ^: IFQT ''
-)
-
 rona_form=: 0 : 0
 pc rona; pn "J rona";
 bin v;
@@ -91,7 +83,6 @@ WINDOW=: ". wd 'get maw text'
 )
 rona_tmf_button=: 3 : 0
 TIMEFRAME=: - ". wd 'get tmf text'
-
 )
 
 courir=: 3 : 0
