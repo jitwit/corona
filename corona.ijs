@@ -4,7 +4,6 @@ require'tables/csv plot web/gethttp'
 confirmed=: makenum &.> readcsv jpath '~/code/corona/data/confirmed.csv'
 deaths   =: makenum &.> readcsv jpath '~/code/corona/data/deaths.csv'
 CAN      =: I.(<'Canada')e.~1{::"1 confirmed
-
 DIR=: '~/code/corona'
 
 update=: 3 : 0
@@ -87,7 +86,7 @@ TIMEFRAME=: - ". wd 'get tmf text'
 
 courir=: 3 : 0
 if. IFQT do. wd rona_form[rona_close^:(wdisparent'rona')''
-else. echo 'wants to be run from jqt' end.
+else. 'wants to be run from jqt' end.
 )
 
 courir''
