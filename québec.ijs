@@ -18,7 +18,7 @@ csv_t=: readcsv '../Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
 csv_c=: readcsv '../Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d=: readcsv '../Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
-tf =: 14
+tf =: 7
 
 plot_prov =: 3 : 0
 'csv prov clr' =. y
@@ -31,7 +31,7 @@ pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 
 plot_c =: 3 : 0
 pd 'reset; xcaption days; ycaption cases; title rona cases in canada'
-pd 'subtitle daily report & 14 day moving average; subtitlecolor snow'
+pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
 plot_prov csv_c;'Quebec';'21 199 255'
@@ -45,13 +45,14 @@ pd 'show'
 
 plot_d =: 3 : 0
 pd 'reset; xcaption days; ycaption cases; title rona deaths in canada'
-pd 'subtitle daily report & 14 day moving average; subtitlecolor snow'
+pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
 plot_prov csv_d;'Quebec';'21 199 255'
 plot_prov csv_d;'Ontario';'250 40 66'
 plot_prov csv_d;'Alberta';'15 217 39'
 plot_prov csv_d;'BC';'130 113 204'
+pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
 pd 'show pdf'
 )

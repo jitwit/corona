@@ -6,10 +6,13 @@ inspq_url = https://www.inspq.qc.ca/sites/default/files/covid/donnees/combine.cs
 deaths.csv = ~/code/corona/data/deaths.csv
 confirmed.csv = ~/code/corona/data/confirmed.csv
 inspq.csv = ~/code/corona/data/inspq.csv
+covcanrepo = ../Covid19Canada
 
 update : 
 	curl $(confirmed_url) > $(confirmed.csv)
 	curl $(deaths_url) > $(deaths.csv)
 	curl $(inspq_url) > $(inspq.csv)
+	cd $(covcanrepo) && git pull
+
 clean :
 	rm -rf *~
