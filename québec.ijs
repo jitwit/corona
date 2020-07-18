@@ -20,9 +20,9 @@ colstest =: hdrs i. <&.> colconf;colneg NB. ;coltest
 qcresults  =: > }. colstest {"1 csv
 qcprogress =: > 2 }. colscd {"1 csv
 
-csv_t=: readcsv '../Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
-csv_c=: readcsv '../Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
-csv_d=: readcsv '../Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
+csv_t=: readcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
+csv_c=: readcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
+csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
 tf =: 7
 
