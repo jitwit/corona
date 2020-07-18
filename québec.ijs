@@ -1,6 +1,12 @@
-coclass 'jqrona'
+require'tables/csv plot web/gethttp jzplot media/imagekit'
+coinsert 'pplatimg jwplot'
 
-require'tables/csv plot web/gethttp stats/base'
+DIR=: '~/code/corona'
+
+update=: 3 : 0
+echo 2!:0 'cd ',DIR,' && make update'
+echo 'updated'
+)
 
 csv =: makenum &.> readcsv jpath '~/code/corona/data/inspq.csv'
 hdrs =: {. csv
@@ -30,7 +36,9 @@ pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
 
 plot_c =: 3 : 0
-pd 'reset; xcaption days; ycaption cases; title rona cases in canada'
+pd 'reset'
+if. IFQT do. pd 'qt 1200 800' end.
+pd 'xcaption days; ycaption cases; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
@@ -40,11 +48,14 @@ plot_prov csv_c;'Alberta';'15 217 39'
 plot_prov csv_c;'BC';'130 113 204'
 pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
-pd 'show'
+if. IFQT do. pd 'show; save png cases.png 0'
+else. pd 'show' end.
 )
 
 plot_d =: 3 : 0
-pd 'reset; xcaption days; ycaption cases; title rona deaths in canada'
+pd 'reset'
+if. IFQT do. pd 'qt 1200 800' end.
+pd 'xcaption days; ycaption cases; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
@@ -54,7 +65,6 @@ plot_prov csv_d;'Alberta';'15 217 39'
 plot_prov csv_d;'BC';'130 113 204'
 pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
-pd 'show pdf'
+if. IFQT do. pd 'show; save png death.png 0'
+else. pd 'show' end.
 )
-
-plot_c''
