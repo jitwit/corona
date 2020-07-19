@@ -1,6 +1,4 @@
-require'tables/csv plot web/gethttp jzplot media/imagekit'
 load '~/code/corona/québec.ijs'
-coinsert 'pplatimg jwplot'
 
 NB. plot settings/customization
 NB. maybe look to?: https://code.jsoftware.com/wiki/Scripts/Real-time_Plot

@@ -1,5 +1,4 @@
-require'tables/csv plot web/gethttp jzplot media/imagekit'
-coinsert 'pplatimg jwplot'
+require 'plot tables/csv'
 
 DIR=: '~/code/corona'
 
@@ -50,7 +49,7 @@ plot_prov csv_c;'Alberta';'15 217 39'
 plot_prov csv_c;'BC';'130 113 204'
 pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
-if. IFQT do. pd 'show; save png cases.png 0'
+if. IFQT do. pd 'show; save png cases'
 else. pd 'show' end.
 1!:44 dir
 )
@@ -70,7 +69,7 @@ plot_prov csv_d;'Alberta';'15 217 39'
 plot_prov csv_d;'BC';'130 113 204'
 pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
-if. IFQT do. pd 'show; save png death.png 0'
+if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/death'
 else. pd 'show' end.
 1!:44 dir
 )
