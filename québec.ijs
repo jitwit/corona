@@ -60,7 +60,7 @@ dir=. 1!:43''
 1!:44 jpath DIR,'/images'
 pd 'reset'
 if. IFQT do. pd 'qt 1200 800' end.
-pd 'xcaption days; ycaption cases; title rona deaths in canada'
+pd 'xcaption days; ycaption deaths; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
