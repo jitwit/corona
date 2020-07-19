@@ -1,6 +1,6 @@
 
 Just watching the numbers go up and down
 
-[[cases.png][cases]]
+[[file:images/cases.png][cases]]
 
-[[file:death.png][death]]
+[[file:images/death.png][death]]

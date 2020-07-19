@@ -36,6 +36,8 @@ pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
 
 plot_c =: 3 : 0
+dir=. 1!:43''
+1!:44 jpath DIR,'/images'
 pd 'reset'
 if. IFQT do. pd 'qt 1200 800' end.
 pd 'xcaption days; ycaption cases; title rona cases in canada'
@@ -50,9 +52,12 @@ pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
 if. IFQT do. pd 'show; save png cases.png 0'
 else. pd 'show' end.
+1!:44 dir
 )
 
 plot_d =: 3 : 0
+dir=. 1!:43''
+1!:44 jpath DIR,'/images'
 pd 'reset'
 if. IFQT do. pd 'qt 1200 800' end.
 pd 'xcaption days; ycaption cases; title rona deaths in canada'
@@ -67,4 +72,5 @@ pd 'key Québec Ontario Alberta "British Columbia"'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
 if. IFQT do. pd 'show; save png death.png 0'
 else. pd 'show' end.
+1!:44 dir
 )
