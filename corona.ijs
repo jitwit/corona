@@ -28,7 +28,7 @@ csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.
 
 tf =: 7
 NB. cases per unit population
-cpup =: 1000000
+cpup =: 1000
 
 plot_prov =: 3 : 0
 'csv prov clr' =. y
@@ -54,8 +54,9 @@ plot_prov csv_c;'Quebec';'21 199 255'
 plot_prov csv_c;'Ontario';'250 40 66'
 plot_prov csv_c;'Alberta';'15 217 39'
 plot_prov csv_c;'BC';'130 113 204'
-pd 'key Québec Ontario Alberta "British Columbia"'
-pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
+plot_prov csv_c;'Manitoba';'221 113 167'
+pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
+pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
 if. IFQT do. pd 'show; save png cases'
 else. pd 'show' end.
 1!:44 dir
@@ -74,8 +75,9 @@ plot_prov csv_d;'Quebec';'21 199 255'
 plot_prov csv_d;'Ontario';'250 40 66'
 plot_prov csv_d;'Alberta';'15 217 39'
 plot_prov csv_d;'BC';'130 113 204'
-pd 'key Québec Ontario Alberta "British Columbia"'
-pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204'
+plot_prov csv_d;'Manitoba';'221 113 167'
+pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
+pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
 if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/death'
 else. pd 'show' end.
 1!:44 dir
@@ -121,7 +123,7 @@ courir=: 3 : 0
 if. IFQT do.
   rona_close^:(wdisparent'rona')''
   wd rona_form
-else. plot end.
+else. plot_c'' end.
 )
 
 courir''
