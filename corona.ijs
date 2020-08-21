@@ -2,6 +2,9 @@ require 'plot tables/csv'
 
 DIR=: '~/code/corona'
 
+pop_provs=: 'Ontario';'Quebec';'BC';'Alberta';'Manitoba';'Saskatchewan';'Nova Scotia';'New Brunswick';'NL';'PEI';'NWT';'Nunavut';'Yukon'
+pop_pops =: 14745040 8552362 5120184 4428247 1379121 1181987 978274 780890 520437 158717 44982 39486 41293
+
 update=: 3 : 0
 echo 2!:0 'cd ',DIR,' && make update'
 echo 'updated'
@@ -23,11 +26,15 @@ csv_t=: readcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.cs
 csv_c=: readcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
-tf =: 21
+tf =: 7
+NB. cases per unit population
+cpup =: 1000000
 
 plot_prov =: 3 : 0
 'csv prov clr' =. y
-ts =. > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
+dts =. ~. }. 1 {"1 csv
+pop =. pop_pops {~ pop_provs i. < prov
+ts =. cpup * pop %~ > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
 pd 'color ',clr,';type dot; pensize 0.8'
 pd (;~i.@#) ts
 pd 'type line;pensize 2'
@@ -39,7 +46,7 @@ dir=. 1!:43''
 1!:44 jpath DIR,'/images'
 pd 'reset'
 if. IFQT do. pd 'qt 1200 800' end.
-pd 'xcaption days; ycaption cases; title rona cases in canada'
+pd 'xcaption days; ycaption cases/',(":cpup),'; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
@@ -59,7 +66,7 @@ dir=. 1!:43''
 1!:44 jpath DIR,'/images'
 pd 'reset'
 if. IFQT do. pd 'qt 1200 800' end.
-pd 'xcaption days; ycaption deaths; title rona deaths in canada'
+pd 'xcaption days; ycaption deaths/',(":cpup),'; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
 pd 'axiscolor snow; labelcolor snow; captioncolor snow'
@@ -109,11 +116,12 @@ rona_tmf_button=: 3 : 0
 tf=: - ". wd 'get tmf text'
 )
 
+
 courir=: 3 : 0
 if. IFQT do.
   rona_close^:(wdisparent'rona')''
   wd rona_form
-else. 'wants to be run from jqt' end.
+else. plot end.
 )
 
 courir''
