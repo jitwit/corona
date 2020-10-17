@@ -1,5 +1,4 @@
-require 'plot tables/csv'
-
+load 'tables/csv plot'
 DIR=: '~/code/corona'
 
 pop_provs=: 'Ontario';'Quebec';'BC';'Alberta';'Manitoba';'Saskatchewan';'Nova Scotia';'New Brunswick';'NL';'PEI';'NWT';'Nunavut';'Yukon'
@@ -12,22 +11,12 @@ echo 'updated'
 
 csv =: makenum &.> readcsv jpath '~/code/corona/data/inspq.csv'
 hdrs =: {. csv
-colconf =: 'Cumul de cas confirmés'
-colneg  =: 'Cumul des personnes avec des analyses négatives'
-coltest =: 'Personnes testées'
-
-colscd   =: hdrs i. <&.> 'Nouveaux cas';'Nouveaux décès'
-colstest =: hdrs i. <&.> colconf;colneg NB. ;coltest
-
-qcresults  =: > }. colstest {"1 csv
-qcprogress =: > 2 }. colscd {"1 csv
 
 csv_t=: readcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
 csv_c=: readcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
 tf =: 7
-NB. cases per unit population
 cpup =: 1000
 
 plot_prov =: 3 : 0
@@ -57,7 +46,7 @@ plot_prov csv_c;'BC';'130 113 204'
 plot_prov csv_c;'Manitoba';'221 113 167'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
-if. IFQT do. pd 'show; save png cases'
+if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/cases'
 else. pd 'show' end.
 1!:44 dir
 )
@@ -115,9 +104,8 @@ rona_maw_button=: 3 : 0
 WINDOW=: ". wd 'get maw text'
 )
 rona_tmf_button=: 3 : 0
-tf=: - ". wd 'get tmf text'
+tf=: ". wd 'get tmf text'
 )
-
 
 courir=: 3 : 0
 if. IFQT do.
