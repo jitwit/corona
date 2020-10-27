@@ -1,4 +1,4 @@
-load 'canada.ijs'
+load '~/code/corona/canada.ijs'
 NB. maybe look to: https://code.jsoftware.com/wiki/Plot/Class or
 NB. https://code.jsoftware.com/wiki/Scripts/Real-time_Plot for
 NB. something better?

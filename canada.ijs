@@ -34,6 +34,7 @@ plot_c =: 3 : 0
 dir=. 1!:43''
 1!:44 jpath DIR,'/images'
 pd 'reset'
+if. IFQT do. pd 'qt 1200 800' end.
 pd 'xcaption days; ycaption cases/',(":cpup),'; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
@@ -45,7 +46,8 @@ plot_prov csv_c;'BC';'130 113 204'
 plot_prov csv_c;'Manitoba';'221 113 167'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
-if. IFQT do. pd 'show canvas 1200 800 /home/jrn/code/corona/images/cases' end.
+if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/cases'
+else. pd 'show' end.
 1!:44 dir
 )
 
@@ -71,5 +73,5 @@ else. pd 'show' end.
 )
 
 
-plot_c''
+NB. plot_c''
 
