@@ -1,6 +1,11 @@
+#+title: Rona in Canada
 
 Just watching the numbers go up and down
 
-[[images/cases.png][cases]]
+#+caption: cases
+[[file:images/cases.png]]
 
-[[images/death.png][death]]
+
+#+caption: deaths
+[[file:images/death.png]]
+
