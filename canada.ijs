@@ -44,8 +44,9 @@ plot_prov csv_c;'Ontario';'250 40 66'
 plot_prov csv_c;'Alberta';'15 217 39'
 plot_prov csv_c;'BC';'130 113 204'
 plot_prov csv_c;'Manitoba';'221 113 167'
-pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
-pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
+plot_prov csv_c;'Saskatchewan';'253 140 75'
+pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
+pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/cases'
 else. pd 'show' end.
 1!:44 dir
@@ -65,13 +66,13 @@ plot_prov csv_d;'Ontario';'250 40 66'
 plot_prov csv_d;'Alberta';'15 217 39'
 plot_prov csv_d;'BC';'130 113 204'
 plot_prov csv_d;'Manitoba';'221 113 167'
-pd 'key Québec Ontario Alberta "British Columbia" Manitoba'
-pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167'
+plot_prov csv_d;'Saskatchewan';'253 140 75'
+pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
+pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/death'
 else. pd 'show' end.
 1!:44 dir
 )
 
-
-NB. plot_c''
+plot_d''
 
