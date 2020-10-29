@@ -11,7 +11,7 @@ covcanrepo = ../Covid19Canada
 update : 
 	curl $(confirmed_url) > $(confirmed.csv)
 	curl $(deaths_url) > $(deaths.csv)
-	curl $(inspq_url) > $(inspq.csv)
+#	curl $(inspq_url) > $(inspq.csv) unreliable clowns
 	cd $(covcanrepo) && git pull
 
 clean :
