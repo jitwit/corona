@@ -21,20 +21,9 @@ plot_prov =: 3 : 0
 dts =. ~. }. 1 {"1 csv
 pop =. pop_pops {~ pop_provs i. < prov
 ts =. cpup * pop %~ > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
-pd 'color ',clr,';type dot;pensize 0.8'
+pd 'color ',clr,';type dot;pensize 0.5'
 pd (;~i.@#) ts
-pd 'type line;pensize 2'
-pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
-)
-
-plot_prov_canv =: 3 : 0
-'csv prov clr' =. y
-dts =. ~. }. 1 {"1 csv
-pop =. pop_pops {~ pop_provs i. < prov
-ts =. cpup * pop %~ > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
-pd 'color ',clr,';type dot;pensize 4'
-pd (;~i.@#) ts
-pd 'type line;pensize 3.5'
+pd 'type line;pensize 2.4'
 pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
 
@@ -56,34 +45,14 @@ plot_prov csv_c;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/cases'
-else. pd 'show' end.
-1!:44 dir
-)
-
-plot_canv =: 3 : 0
-dir=. 1!:43''
-1!:44 jpath DIR,'/images'
-pd 'reset; titlefont Georgia 30'
-pd 'xcaption days; ycaption cases/',(":cpup),'; title rona cases in canada'
-pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
-pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
-pd 'axiscolor snow; labelcolor snow; captioncolor snow'
-plot_prov_canv csv_c;'Quebec';'21 199 255'
-plot_prov_canv csv_c;'Ontario';'250 40 66'
-plot_prov_canv csv_c;'Alberta';'15 217 39'
-plot_prov_canv csv_c;'BC';'130 113 204'
-plot_prov_canv csv_c;'Manitoba';'221 113 167'
-plot_prov_canv csv_c;'Saskatchewan';'253 140 75'
-pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
-pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
-pd 'qtc cases.png 800 600'
+else. pd 'visible 0; show' end.
 1!:44 dir
 )
 
 plot_d =: 3 : 0
 dir=. 1!:43''
 1!:44 jpath DIR,'/images'
-pd 'reset'
+pd 'reset; visible 0'
 if. IFQT do. pd 'qt 1200 800' end.
 pd 'xcaption days; ycaption deaths/',(":cpup),'; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
@@ -98,10 +67,8 @@ plot_prov csv_d;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/death'
-else. pd 'show' end.
+else. pd 'visible 0; show' end.
 1!:44 dir
 )
-
-NB. plot_canv''
 
 plot_c''
