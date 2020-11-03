@@ -28,10 +28,7 @@ pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
 
 plot_c =: 3 : 0
-dir=. 1!:43''
-1!:44 jpath DIR,'/images'
 pd 'reset'
-if. IFQT do. pd 'qt 1200 800' end.
 pd 'xcaption days; ycaption cases/',(":cpup),'; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
@@ -44,16 +41,11 @@ plot_prov csv_c;'Manitoba';'221 113 167'
 plot_prov csv_c;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
-if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/cases'
-else. pd 'visible 0; show' end.
-1!:44 dir
+pd 'visible 0; show'
 )
 
 plot_d =: 3 : 0
-dir=. 1!:43''
-1!:44 jpath DIR,'/images'
-pd 'reset; visible 0'
-if. IFQT do. pd 'qt 1200 800' end.
+pd 'reset'
 pd 'xcaption days; ycaption deaths/',(":cpup),'; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
 pd 'backcolor black; labelcolor snow; captioncolor snow; titlecolor snow'
@@ -66,9 +58,7 @@ plot_prov csv_d;'Manitoba';'221 113 167'
 plot_prov csv_d;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
-if. IFQT do. pd 'show; save png /home/jrn/code/corona/images/death'
-else. pd 'visible 0; show' end.
-1!:44 dir
+pd 'visible 0; show'
 )
 
 plot_c''
