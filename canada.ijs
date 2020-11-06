@@ -13,15 +13,12 @@ csv_t=: readcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.cs
 csv_c=: readcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
-tf =: 7
-cpup =: 1000000
-
 plot_prov =: 3 : 0
 'csv prov clr' =. y
 dts =. ~. }. 1 {"1 csv
 pop =. pop_pops {~ pop_provs i. < prov
 ts =. cpup * pop %~ > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
-pd 'color ',clr,';type dot;pensize 0.5'
+pd 'color ',clr,';type dot;pensize 0.6'
 pd (;~i.@#) ts
 pd 'type line;pensize 2.4'
 pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
@@ -61,4 +58,6 @@ pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 pd 'visible 0; show'
 )
 
-plot_c''
+tf =: 7
+cpup =: 10^6
+plot_c ''
