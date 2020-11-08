@@ -1,23 +1,20 @@
-require 'tables/csv plot'
+require 'plot ../jsv/jsv.ijs'
+
 DIR=: '~/code/corona'
 
-pop_provs=: 'Ontario';'Quebec';'BC';'Alberta';'Manitoba';'Saskatchewan';'Nova Scotia';'New Brunswick';'NL';'PEI';'NWT';'Nunavut';'Yukon'
-pop_pops =: 14745040 8552362 5120184 4428247 1379121 1181987 978274 780890 520437 158717 44982 39486 41293
+csv_p =: rcsv '~/code/Covid19Canada/other/prov_map.csv'
+csv_t =: rcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
+csv_c =: rcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
+csv_d =: rcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
-update=: 3 : 0
-echo 2!:1 'cd ',DIR,' && make update'
-echo 'updated'
-)
-
-csv_t=: readcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
-csv_c=: readcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
-csv_d=: readcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
+pop_provs =: {."1@}. csv_p
+pop_pops =: _".>{:"1@}. csv_p
 
 plot_prov =: 3 : 0
 'csv prov clr' =. y
 dts =. ~. }. 1 {"1 csv
 pop =. pop_pops {~ pop_provs i. < prov
-ts =. cpup * pop %~ > _2 {"1 makenum &.> csv #~ prov&-: &> {."1 csv
+ts =. cpup * pop %~ 0 ". > _2 {"1 csv #~ prov&-: &> {."1 csv
 pd 'color ',clr,';type dot;pensize 0.6'
 pd (;~i.@#) ts
 pd 'type line;pensize 2.4'
