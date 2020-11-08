@@ -1,4 +1,4 @@
-require 'plot ../jsv/jsv.ijs'
+require 'plot data/jsv'
 
 DIR=: '~/code/corona'
 
@@ -57,4 +57,4 @@ pd 'visible 0; show'
 
 tf =: 7
 cpup =: 10^6
-plot_c ''
+plot_d ''
