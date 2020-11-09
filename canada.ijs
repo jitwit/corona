@@ -5,14 +5,16 @@ csv_t =: rcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
 csv_c =: rcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d =: rcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 
-provs =: {."1@}. csv_p
-pops =: _".>{:"1@}. csv_p
+sel =: {{ (1,({.y)i.<x){::y }}
+provs =: 'province' sel csv_p
+pops =: _".'pop' sel csv_p
+msk =: {{ x -:"1 (#x) {."1 y }}"1
 
 plot_prov =: 3 : 0
 'csv prov clr' =. y
-dts =. ~. }. 1 {"1 csv
-pop =. pops {~ provs i. < prov
-ts =. perpop * pop %~ 0 ". > _2 {"1 csv #~ prov&-: &> {."1 csv
+pop =. pops {~ (}. i. {.) prov,provs
+js =. prov msk 'province' sel csv
+ts =. perpop * pop %~ 0 ". js # 1 _2 {:: csv NB. cases/deaths it's column _2
 pd 'color ',clr,';type dot;pensize 0.6'
 pd (;~i.@#) ts
 pd 'type line;pensize 2.4'
