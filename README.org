@@ -2,10 +2,18 @@
 
 Just watching the numbers go up and down
 
-#+caption: cases
+#+begin_src J :session :exports both :results file :plot images/cases.png
+load 'canada.ijs'
+plot_c''
+#+end_src
+
+#+RESULTS:
 [[file:images/cases.png]]
 
+#+begin_src J :session :exports both :results file :plot images/deaths.png
+plot_d''
+#+end_src
 
-#+caption: deaths
-[[file:images/death.png]]
+#+RESULTS:
+[[file:images/deaths.png]]
 
