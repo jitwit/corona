@@ -85,6 +85,8 @@ pd 'visible 0; show'
 )
 #+end_src
 
+* cases
+
 #+name: cases
 #+begin_src J :session :exports both :results file :plot images/cases.png
 plot_c''
@@ -92,6 +94,8 @@ plot_c''
 #+attr_html: :height 400px
 #+RESULTS: cases
 [[file:images/cases.png]]
+
+* deaths
 
 #+name: deaths
 #+begin_src J :session :exports both :results file :plot images/deaths.png
