@@ -47,10 +47,10 @@ pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
 #+end_src
 
-** plotting verbs for cases & deaths
+* cases
 
-#+begin_src J :session :exports both
-plot_c =: 3 : 0
+#+name: cases
+#+begin_src J :session :exports both :results file :plot images/cases.png
 pd 'reset'
 pd 'xcaption days; ycaption cases/',(":perpop),'; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
@@ -65,9 +65,15 @@ plot_prov csv_c;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 pd 'visible 0; show'
-)
+#+end_src
+#+attr_html: :height 400px
+#+RESULTS: cases
+[[file:images/cases.png]]
 
-plot_d =: 3 : 0
+* deaths
+
+#+name: deaths
+#+begin_src J :session :exports both :results file :plot images/deaths.png
 pd 'reset'
 pd 'xcaption days; ycaption deaths/',(":perpop),'; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
@@ -82,24 +88,6 @@ plot_prov csv_d;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 pd 'visible 0; show'
-)
-#+end_src
-
-* cases
-
-#+name: cases
-#+begin_src J :session :exports both :results file :plot images/cases.png
-plot_c''
-#+end_src
-#+attr_html: :height 400px
-#+RESULTS: cases
-[[file:images/cases.png]]
-
-* deaths
-
-#+name: deaths
-#+begin_src J :session :exports both :results file :plot images/deaths.png
-plot_d''
 #+end_src
 #+attr_html: :height 400px
 #+RESULTS: deaths
