@@ -15,5 +15,5 @@ plot_d''
 #+end_src
 
 #+RESULTS:
-[[file:images/deaths.png]]
+=[[file:images/deaths.png]]
 
