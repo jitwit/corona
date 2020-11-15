@@ -1,7 +1,5 @@
 #+title: Rona in Canada
 
-* charting our collective misery as witnessed in canada
-
 ** imports & data
 
 [[https://github.com/jitwit/jsv][jsv]] is a 19 line miniature csv parser i wrote for fun that works at
