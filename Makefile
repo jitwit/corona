@@ -18,3 +18,6 @@ README.html : README.org
 
 clean :
 	rm -rf *~ *.html
+
+updates.txt :
+	cd $(covcanrepo) && git log | grep "Date:" | cut -d ' ' -f 5,6,7,8 > ../corona/updates.txt 
