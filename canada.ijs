@@ -1,38 +1,15 @@
-#+title: Rona in Canada
-
-** imports & data
-
-[[https://github.com/jitwit/jsv][jsv]] is a 19 line miniature csv parser i wrote for fun that works at
-least for these modest purposes
-
-#+begin_src J :session :exports both
 require 'plot data/jsv'
+
 csv_p =: rcsv '~/code/Covid19Canada/other/prov_map.csv'
 csv_t =: rcsv '~/code/Covid19Canada/timeseries_prov/testing_timeseries_prov.csv'
 csv_c =: rcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d =: rcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
-#+end_src
 
-** queries & config
-
-extremely basic [[https://code.jsoftware.com/wiki/Essays/Inverted_Table][inverted table]] functionality, timeframe for moving
-average and amount by which to normalize populations
-
-#+begin_src J :session :exports both
 sel =: {{ (1,({.y)i.<x){::y }}
-msk =: {{ x -:"1 (#x) {."1 y }}"1
-
 provs =: 'province' sel csv_p
 pops =: _".'pop' sel csv_p
-tf =: 7
-perpop =: 10^6
-#+end_src
+msk =: {{ x -:"1 (#x) {."1 y }}"1
 
-** plotting each province
-
-plots dots along with line for moving average
-
-#+begin_src J :session :exports both
 plot_prov =: 3 : 0
 'csv prov clr' =. y
 pop =. pops {~ (}. i. {.) prov,provs
@@ -43,12 +20,8 @@ pd (;~i.@#) ts
 pd 'type line;pensize 2.4'
 pd (;~(-:tf)+i.@#) tf (+/%#)\ ts
 )
-#+end_src
 
-* cases
-
-#+name: cases
-#+begin_src J :session :exports both :results file :plot images/cases.png
+plot_c =: 3 : 0
 pd 'reset'
 pd 'xcaption days; ycaption cases/',(":perpop),'; title rona cases in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
@@ -63,15 +36,9 @@ plot_prov csv_c;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 pd 'visible 0; show'
-#+end_src
-#+attr_html: :height 600px
-#+RESULTS: cases
-[[file:images/cases.png]]
+)
 
-* deaths
-
-#+name: deaths
-#+begin_src J :session :exports both :results file :plot images/deaths.png
+plot_d =: 3 : 0
 pd 'reset'
 pd 'xcaption days; ycaption deaths/',(":perpop),'; title rona deaths in canada'
 pd 'subtitle daily report & ',(":tf),' day moving average; subtitlecolor snow'
@@ -86,9 +53,8 @@ plot_prov csv_d;'Saskatchewan';'253 140 75'
 pd 'key Québec Ontario Alberta "British Columbia" Manitoba Saskatchewan'
 pd 'keycolor 21 199 255,250 40 66,15 217 39,130 113 204,221 113 167,253 140 75'
 pd 'visible 0; show'
-#+end_src
-#+attr_html: :height 600px
-#+RESULTS: deaths
-[[file:images/deaths.png]]
+)
 
-
+tf =: 7
+perpop =: 10^6
+plot_c ''
