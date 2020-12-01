@@ -13,6 +13,8 @@ csv_c =: rcsv '~/code/Covid19Canada/timeseries_prov/cases_timeseries_prov.csv'
 csv_d =: rcsv '~/code/Covid19Canada/timeseries_prov/mortality_timeseries_prov.csv'
 #+end_src
 
+#+RESULTS:
+
 ** queries & config
 
 extremely basic [[https://code.jsoftware.com/wiki/Essays/Inverted_Table][inverted table]] functionality, timeframe for moving
