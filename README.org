@@ -92,5 +92,3 @@ pd 'visible 0; show'
 #+attr_html: :height 600px
 #+RESULTS: deaths
 [[file:images/deaths.png]]
-
-
