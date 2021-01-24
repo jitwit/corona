@@ -13,8 +13,8 @@ covcanrepo = ../Covid19Canada
 update : 
 	cd $(covcanrepo) && git pull
 
-README.html : README.org
-	emacs $< --batch --eval "(org-html-export-to-html)"
+README.html : README.org update
+	emacs $< --batch -f org-html-export-to-html
 
 clean :
 	rm -rf *~ *.html
